@@ -1,0 +1,235 @@
+html,
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.page-container {
+    height: 100%;
+}
+
+/*NavBar Section*/
+
+.navbar-container {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 7px 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;    /*this makes logo center aligned*/
+}
+
+@media (max-width: 699px) {
+.logo-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+}
+
+.logo-img {
+    width: px;
+    height: 15px;
+    margin-left: 8px;
+}
+
+@media (max-width: 699px) {
+.logo-img {
+    margin-left: 0px;
+}
+}
+
+.navbar-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+@media (max-width: 699px) {
+.navbar-nav {
+    display: none;
+}
+}
+
+.nav-item {
+    display: flex; /*this makes links center aligned just like logo I dont know why!!*/
+    margin-left: 40px;
+}
+
+.nav-item.home {
+    margin-left: 0px;
+}
+
+.nav-link {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    color: #b0b2be;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #2692e6;
+}
+
+.navbar-profile {
+    display: flex;
+    margin-left: auto;
+}
+
+.actionbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    height: 100%;
+}
+
+@media (min-width: 700px) {
+.actionbar-container {
+    display: none;
+}
+}
+
+.profile-nav {
+    margin-right: 5px;
+}
+
+.profile-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+}
+
+
+.main-content-container {
+    display: flex;
+    background-color: #f9fafe;
+    height: 100%;
+}
+
+/*My Library Section*/
+
+.mylibrary-container {
+    width: 400px;
+    background-color: #f5f5f5;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e8e8e8;
+}
+
+@media (max-width: 699px) {
+.mylibrary-container {
+    width: 100%;
+}
+}
+
+.mylibrary-scrollable {
+    overflow: scroll;
+}
+
+.mylibrary-heading {
+  font-size: 14px;
+  /* letter-spacing: 1px; */
+  color: #b0b2be;
+  margin-bottom: 16px;
+  padding: 32px 48px 0px 45px;
+}
+
+.course-item {
+    display: flex;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    padding: 1.5rem 2.8rem;
+    border-bottom: 1px solid #e8e8e8;
+    box-sizing: border-box;
+}
+
+.course-item.active {
+    background-color: rgba(0,0,0, 0.09);
+}
+
+.course-item:hover {
+  background-color: rgba(0,0,0, 0.04);
+}
+
+.course-img {
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.course-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.course-title {
+  
+}
+
+.course-title-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.course-dt {
+    color: rgba(17,17,17,0.6);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.course-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+/*Lessons Section*/
+
+.lessons-container {
+    background: #e7e7e7;
+    display: flex;
+    padding-top: 60px;
+    padding-left: 410px;
+}
+
+.lessons-scrollable {
+    overflow: scroll;
+
+}
+
+.lessons-deck {
+    margin: 40px 40px 40px 40px;
+    padding: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px 0px #00000017;
+    background-color: #ffffff;
+}
+
